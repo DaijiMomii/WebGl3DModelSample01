@@ -11,7 +11,7 @@
     <div id="unity-container" class="unity-desktop">
       <div id="buttons">
         <button id="testButton_sub" type="button">クリック1</button>
-        <!-- <button id="testButton" type="button">クリック2</button> -->
+        <button id="testButton" type="button">クリック2</button>
       </div>
       <canvas id="unity-canvas" width=960 height=600></canvas>
       <div id="unity-loading-bar">
@@ -36,7 +36,7 @@
       var warningBanner = document.querySelector("#unity-warning");
 
       var testButtonSub = document.querySelector("#testButton_sub");
-      // var testButton = document.querySelector("#testButton");
+      var testButton = document.querySelector("#testButton");
 
       // Shows a temporary message banner/ribbon for a few seconds, or
       // a permanent error message on top of the canvas if type=='error'.
@@ -124,10 +124,10 @@
             unityInstance.SendMessage( "AppWeb", "Test" );
           };
           
-          // testButton.onclick = () => {
-          //   console.log( "testClick!!!!" );
-          //   unityInstance.SendMessage( "AppWeb", "Test" );
-          // };
+          testButton.onclick = () => {
+            console.log( "testClick!!!!" );
+            unityInstance.SendMessage( "AppWeb", "Test" );
+          };
         }).catch((message) => {
           alert(message);
         });

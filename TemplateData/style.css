@@ -16,6 +16,6 @@ body { padding: 0; margin: 0 }
 #unity-warning { position: absolute; left: 50%; top: 5%; transform: translate(-50%); background: white; padding: 10px; display: none }
 
 
-/* #buttons{ z-index: 10; pointer-events: none; } */
-/* #testButton{ position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 10; }  pointer-events: auto;  */
-/* #testButton_sub{ z-index: 20; pointer-events: auto }  */
+#buttons{ pointer-events: none; }
+#testButton{ position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 10 }
+#testButton_sub{ z-index: 20; pointer-events: auto } 
