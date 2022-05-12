@@ -115,14 +115,14 @@
           loadingBar.style.display = "none";
           fullscreenButton.onclick = () => {
             unityInstance.SetFullscreen(1);
-
+          };
+          
           // testButtonSub.onclick = () => {
           //   console.log( "SubClick!!!!" );
           // }
-          // testButton.onclick = () => {
-          //   console.log( "testClick!!!!" );
-          // }
-          };
+          testButton.onclick = () => {
+            console.log( "testClick!!!!" );
+          }
         }).catch((message) => {
           alert(message);
         });
