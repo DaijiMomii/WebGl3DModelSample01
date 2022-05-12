@@ -117,11 +117,9 @@
             unityInstance.SetFullscreen(1);
           };
           
-          // testButtonSub.onclick = () => {
-          //   console.log( "SubClick!!!!" );
-          // }
           testButton.onclick = () => {
             console.log( "testClick!!!!" );
+            unityInstance.SendMessage( "AppWeb", "Test" );
           };
         }).catch((message) => {
           alert(message);
