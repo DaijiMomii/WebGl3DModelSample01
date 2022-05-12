@@ -35,7 +35,7 @@
       var fullscreenButton = document.querySelector("#unity-fullscreen-button");
       var warningBanner = document.querySelector("#unity-warning");
 
-      // var testButtonSub = document.querySelector("#testButton_sub");
+      var testButtonSub = document.querySelector("#testButton_sub");
       var testButton = document.querySelector("#testButton");
 
       // Shows a temporary message banner/ribbon for a few seconds, or
@@ -117,6 +117,10 @@
           loadingBar.style.display = "none";
           fullscreenButton.onclick = () => {
             unityInstance.SetFullscreen(1);
+          };
+
+          testButtonSub.onclick = () => {
+            window.alert( "aaa" );
           };
           
           testButton.onclick = () => {
