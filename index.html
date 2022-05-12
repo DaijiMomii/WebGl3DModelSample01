@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
-    <button id="testButton" type="button">クリック1</button>
     <div id="unity-container" class="unity-desktop">
+      <button id="testButton_sub" type="button">クリック1</button>
       <button id="testButton" type="button">クリック2</button>
       <canvas id="unity-canvas" width=960 height=600></canvas>
       <div id="unity-loading-bar">
@@ -33,6 +33,7 @@
       var fullscreenButton = document.querySelector("#unity-fullscreen-button");
       var warningBanner = document.querySelector("#unity-warning");
 
+      var testButtonSub = document.querySelector("#testButton_sub");
       var testButton = document.querySelector("#testButton");
 
       // Shows a temporary message banner/ribbon for a few seconds, or
@@ -115,6 +116,9 @@
           fullscreenButton.onclick = () => {
             unityInstance.SetFullscreen(1);
 
+          testButtonSub.onclick = () => {
+            console.log( "SubClick!!!!" );
+          }
           testButton.onclick = () => {
             console.log( "testClick!!!!" );
           }
